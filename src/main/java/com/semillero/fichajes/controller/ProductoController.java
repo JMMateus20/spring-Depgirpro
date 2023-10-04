@@ -1,5 +1,6 @@
 package com.semillero.fichajes.controller;
 
+import com.semillero.fichajes.dto.ProductoResponseDTO;
 import com.semillero.fichajes.dto.RegistroProductoDTO;
 import com.semillero.fichajes.entity.Producto;
 import com.semillero.fichajes.service.ProductoService;
@@ -18,7 +19,7 @@ public class ProductoController {
 
 
     @RequestMapping(value = "productos", method = RequestMethod.POST)
-    public ResponseEntity<Producto> insertar(@RequestBody RegistroProductoDTO datos){
+    public ResponseEntity<ProductoResponseDTO> insertar(@RequestBody RegistroProductoDTO datos){
         return productoService.insertar(datos);
     }
 
