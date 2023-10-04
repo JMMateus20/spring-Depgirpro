@@ -21,7 +21,7 @@ public class Producto {
     @Column(name="NOMBRE")
     private String nombre;
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+
     @Column(name="PRECIO")
     private BigDecimal precio;
 
