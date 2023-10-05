@@ -1,11 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mariadb://localhost:3307/depgirpro
-    username: root
-    password: Matius171007
+    url: jdbc:mariadb://45.93.101.18:3306/u440037415_dev_depgirpro
+    username: u440037415_dev_depgirpro
+    password: Ttlgs*2023++$
     driver-class-name: org.mariadb.jdbc.Driver
-
-jpa:
-  properties:
-    hibernate:
-      dialect: org.hibernate.dialect.MariaDBDialect
